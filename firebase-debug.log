@@ -1,0 +1,95 @@
+[debug] [2022-08-19T09:27:13.337Z] ----------------------------------------------------------------------
+[debug] [2022-08-19T09:27:13.345Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ADENIRAN\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-08-19T09:27:13.348Z] CLI Version:   11.7.0
+[debug] [2022-08-19T09:27:13.348Z] Platform:      win32
+[debug] [2022-08-19T09:27:13.349Z] Node Version:  v16.14.2
+[debug] [2022-08-19T09:27:13.428Z] Time:          Fri Aug 19 2022 10:27:13 GMT+0100 (West Africa Standard Time)
+[debug] [2022-08-19T09:27:13.429Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-08-19T09:27:13.663Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-08-19T09:27:13.663Z] > authorizing via signed-in user (adenirandaniel565@gmail.com)
+[debug] [2022-08-19T09:27:13.664Z] [iam] checking project movieapptv-cdc2e for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-08-19T09:27:13.667Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/movieapptv-cdc2e:testIamPermissions [none]
+[debug] [2022-08-19T09:27:13.668Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/movieapptv-cdc2e:testIamPermissions x-goog-quota-user=projects/movieapptv-cdc2e
+[debug] [2022-08-19T09:27:13.668Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/movieapptv-cdc2e:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-08-19T09:27:21.331Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/movieapptv-cdc2e:testIamPermissions 200
+[debug] [2022-08-19T09:27:21.332Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/movieapptv-cdc2e:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-08-19T09:27:21.336Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/movieapptv-cdc2e [none]
+[debug] [2022-08-19T09:27:23.431Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/movieapptv-cdc2e 200
+[debug] [2022-08-19T09:27:23.433Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/movieapptv-cdc2e {"projectId":"movieapptv-cdc2e","projectNumber":"439504743407","displayName":"MovieAppTv","name":"projects/movieapptv-cdc2e","resources":{"hostingSite":"movieapptv-cdc2e"},"state":"ACTIVE","etag":"1_62a6d682-22f6-4f8f-9a41-88596aaa3c54"}
+[info] 
+[info] === Deploying to 'movieapptv-cdc2e'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-08-19T09:27:23.443Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/movieapptv-cdc2e [none]
+[debug] [2022-08-19T09:27:27.445Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/movieapptv-cdc2e 200
+[debug] [2022-08-19T09:27:27.446Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/movieapptv-cdc2e {"projectId":"movieapptv-cdc2e","projectNumber":"439504743407","displayName":"MovieAppTv","name":"projects/movieapptv-cdc2e","resources":{"hostingSite":"movieapptv-cdc2e"},"state":"ACTIVE","etag":"1_62a6d682-22f6-4f8f-9a41-88596aaa3c54"}
+[debug] [2022-08-19T09:27:27.455Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/439504743407/sites/movieapptv-cdc2e/versions [none]
+[debug] [2022-08-19T09:27:27.456Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/439504743407/sites/movieapptv-cdc2e/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-08-19T09:27:30.525Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/439504743407/sites/movieapptv-cdc2e/versions 200
+[debug] [2022-08-19T09:27:30.525Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/439504743407/sites/movieapptv-cdc2e/versions {"name":"projects/439504743407/sites/movieapptv-cdc2e/versions/6f5e34ffe79771c1","status":"CREATED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[movieapptv-cdc2e]: beginning deploy... 
+[info] i  hosting[movieapptv-cdc2e]: found 13 files in build 
+[debug] [2022-08-19T09:27:30.576Z] [hosting] uploading with 200 concurrency
+[debug] [2022-08-19T09:27:30.579Z] [hosting] hash cache [YnVpbGQ] not populated
+[debug] [2022-08-19T09:27:30.750Z] [hosting] hash cache [YnVpbGQ] stored for 13 files
+[debug] [2022-08-19T09:27:30.751Z] [hosting][hash queue][FINAL] {"max":152,"min":42,"avg":57.38461538461539,"active":0,"complete":13,"success":13,"errored":0,"retried":0,"total":13,"elapsed":167}
+[debug] [2022-08-19T09:27:30.752Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/439504743407/sites/movieapptv-cdc2e/versions/6f5e34ffe79771c1:populateFiles [none]
+[debug] [2022-08-19T09:27:30.752Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/439504743407/sites/movieapptv-cdc2e/versions/6f5e34ffe79771c1:populateFiles {"files":{"/asset-manifest.json":"783ed97545f05b13a7d593c881fa2e0f31b5a1873f891ac0ca101820be0b8e05","/index.html":"464cb6463567817620b19c5dc38e2d409ad2024949fe04b2aff33ea33dbc552f","/manifest.json":"aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a","/robots.txt":"bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49","/static/css/main.0b0acb22.css":"a75e93985751fc8ab09e35c6bb2d3d23ae917a3b7c67c414d8dc98b78a1a398f","/static/css/main.0b0acb22.css.map":"c5593a2a72817bf9a690db00258fc7fce653fa2fd2e1a96509d47e4c78f99e51","/static/js/main.8513651c.js.LICENSE.txt":"976dbd7959365ef7e9cf4ca4d0a89827ca0f29314c7e306e33ccc3e7c14ba767","/static/media/SearchIcon.b416605642fcb3f2447edc96c1a80e05.svg":"2187ef23dfa041dace95a08444e9407188056ec220ff2733236928aa674418e5","/favicon.ico":"eae62e993eb980ec8a25058c39d5a51feab118bd2100c4deebb2a9c158ec11f9","/logo192.png":"3ee59515172ee198f3be375979df15ac5345183e656720a381b8872b2a39dc8b","/static/js/main.8513651c.js":"de7295fc602edcb08901bcfe24d124a2a74ea78085805b93dad291dafed0fb95","/logo512.png":"ee7e2f3fdb8209c4b6fd7bef6ba50d1b9dba30a25bb5c3126df057e1cb6f5331","/static/js/main.8513651c.js.map":"62fcd963db844c224287de976f88fb444c966ae5e6fa430463d7fa8e20318109"}}
+[debug] [2022-08-19T09:27:33.596Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/439504743407/sites/movieapptv-cdc2e/versions/6f5e34ffe79771c1:populateFiles 200
+[debug] [2022-08-19T09:27:33.597Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/439504743407/sites/movieapptv-cdc2e/versions/6f5e34ffe79771c1:populateFiles {"uploadRequiredHashes":["464cb6463567817620b19c5dc38e2d409ad2024949fe04b2aff33ea33dbc552f"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/movieapptv-cdc2e/versions/6f5e34ffe79771c1/files"}
+[debug] [2022-08-19T09:27:33.600Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/movieapptv-cdc2e/versions/6f5e34ffe79771c1/files/464cb6463567817620b19c5dc38e2d409ad2024949fe04b2aff33ea33dbc552f [none]
+[debug] [2022-08-19T09:27:33.600Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/movieapptv-cdc2e/versions/6f5e34ffe79771c1/files/464cb6463567817620b19c5dc38e2d409ad2024949fe04b2aff33ea33dbc552f [stream]
+[debug] [2022-08-19T09:27:33.606Z] [hosting][populate queue][FINAL] {"max":2852,"min":2852,"avg":2852,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":2859}
+[debug] [2022-08-19T09:27:33.607Z] [hosting] uploads queued: 1
+[debug] [2022-08-19T09:27:36.662Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/movieapptv-cdc2e/versions/6f5e34ffe79771c1/files/464cb6463567817620b19c5dc38e2d409ad2024949fe04b2aff33ea33dbc552f 200
+[debug] [2022-08-19T09:27:36.663Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/movieapptv-cdc2e/versions/6f5e34ffe79771c1/files/464cb6463567817620b19c5dc38e2d409ad2024949fe04b2aff33ea33dbc552f [stream]
+[debug] [2022-08-19T09:27:36.663Z] [hosting][upload queue][FINAL] {"max":3065,"min":3065,"avg":3065,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":3065}
+[info] +  hosting[movieapptv-cdc2e]: file upload complete 
+[debug] [2022-08-19T09:27:36.668Z] [hosting] deploy completed after 6136ms
+[debug] [2022-08-19T09:27:36.685Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "movieapptv-cdc2e"
+    },
+    "site": "movieapptv-cdc2e",
+    "version": "projects/439504743407/sites/movieapptv-cdc2e/versions/6f5e34ffe79771c1"
+  }
+]
+[info] i  hosting[movieapptv-cdc2e]: finalizing version... 
+[debug] [2022-08-19T09:27:36.691Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/439504743407/sites/movieapptv-cdc2e/versions/6f5e34ffe79771c1 updateMask=status%2Cconfig
+[debug] [2022-08-19T09:27:36.692Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/439504743407/sites/movieapptv-cdc2e/versions/6f5e34ffe79771c1 {"status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]}}
+[debug] [2022-08-19T09:27:39.271Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/439504743407/sites/movieapptv-cdc2e/versions/6f5e34ffe79771c1 200
+[debug] [2022-08-19T09:27:39.271Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/439504743407/sites/movieapptv-cdc2e/versions/6f5e34ffe79771c1 {"name":"projects/439504743407/sites/movieapptv-cdc2e/versions/6f5e34ffe79771c1","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-08-19T09:27:30.317673Z","createUser":{"email":"adenirandaniel565@gmail.com"},"finalizeTime":"2022-08-19T09:27:39.643454Z","finalizeUser":{"email":"adenirandaniel565@gmail.com"}}
+[debug] [2022-08-19T09:27:39.272Z] [hosting] finalized version for movieapptv-cdc2e:[object Object]
+[info] +  hosting[movieapptv-cdc2e]: version finalized 
+[info] i  hosting[movieapptv-cdc2e]: releasing new version... 
+[debug] [2022-08-19T09:27:39.276Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/439504743407/sites/movieapptv-cdc2e/releases versionName=projects%2F439504743407%2Fsites%2Fmovieapptv-cdc2e%2Fversions%2F6f5e34ffe79771c1
+[debug] [2022-08-19T09:27:39.276Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/439504743407/sites/movieapptv-cdc2e/releases {"message":null}
+[debug] [2022-08-19T09:27:42.637Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/439504743407/sites/movieapptv-cdc2e/releases 200
+[debug] [2022-08-19T09:27:42.638Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/439504743407/sites/movieapptv-cdc2e/releases {"name":"projects/439504743407/sites/movieapptv-cdc2e/releases/1660901261774604","version":{"name":"projects/439504743407/sites/movieapptv-cdc2e/versions/6f5e34ffe79771c1","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-08-19T09:27:30.317673Z","createUser":{"email":"adenirandaniel565@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AItbvmmttvd7VnYluL4AAZLz5osznfd7XrFI5nZ5G-Oz=mo"},"finalizeTime":"2022-08-19T09:27:39.643454Z","finalizeUser":{"email":"adenirandaniel565@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AItbvmmttvd7VnYluL4AAZLz5osznfd7XrFI5nZ5G-Oz=mo"}},"type":"DEPLOY","releaseTime":"2022-08-19T09:27:41.774604560Z","releaseUser":{"email":"adenirandaniel565@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AItbvmmttvd7VnYluL4AAZLz5osznfd7XrFI5nZ5G-Oz=mo"}}
+[debug] [2022-08-19T09:27:42.638Z] [hosting] release: {"name":"projects/439504743407/sites/movieapptv-cdc2e/releases/1660901261774604","version":{"name":"projects/439504743407/sites/movieapptv-cdc2e/versions/6f5e34ffe79771c1","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-08-19T09:27:30.317673Z","createUser":{"email":"adenirandaniel565@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AItbvmmttvd7VnYluL4AAZLz5osznfd7XrFI5nZ5G-Oz=mo"},"finalizeTime":"2022-08-19T09:27:39.643454Z","finalizeUser":{"email":"adenirandaniel565@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AItbvmmttvd7VnYluL4AAZLz5osznfd7XrFI5nZ5G-Oz=mo"}},"type":"DEPLOY","releaseTime":"2022-08-19T09:27:41.774604560Z","releaseUser":{"email":"adenirandaniel565@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AItbvmmttvd7VnYluL4AAZLz5osznfd7XrFI5nZ5G-Oz=mo"}}
+[info] +  hosting[movieapptv-cdc2e]: release complete 
+[info] 
+[info] +  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/movieapptv-cdc2e/overview
+[info] Hosting URL: https://movieapptv-cdc2e.web.app
+[debug] [2022-08-19T09:27:54.480Z] Error: Timed out.
+    at Timeout.<anonymous> (C:\Users\ADENIRAN\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:253:49)
+    at listOnTimeout (node:internal/timers:559:17)
+    at processTimers (node:internal/timers:502:7)
+[error] 
+[error] Error: An unexpected error has occurred.
